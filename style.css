@@ -113,3 +113,9 @@ footer {
   border-top: 1px solid #e0e0e0;
   margin-top: 30px;
 }
+
+.responsive-svg-container {
+margin: 0 auto; /* center */
+width: 100%; /* fill parent width */
+max-width: 1200px; /* cap max width */
+}
