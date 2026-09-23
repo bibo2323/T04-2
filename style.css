@@ -1,0 +1,115 @@
+/* ---- Basic reset so browsers don't add weird default spacing ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---- Overall page look ---- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;   /* white background like your image */
+  color: #000000;              /* black text for readability */
+  line-height: 1.6;
+}
+
+/* ---- Navigation bar ---- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #dcaef0;   /* light purple/lavender background */
+}
+
+nav a {
+  color: #000000;              /* logo/site name text stays dark on light bg */
+  text-decoration: none;
+}
+
+/* the logo image inside the nav */
+.logo {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 8px;
+  border-radius: 50%;          /* makes it a circle like your reference image */
+  background-color: #d9d9d9;   /* placeholder grey circle if image is transparent */
+}
+
+/* the Home / Televisions / About Us links, styled as pill buttons */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.nav-link {
+  background-color: #6a1fdb;   /* solid purple pill background */
+  color: #ffffff;              /* white text inside the button */
+  padding: 10px 22px;
+  border-radius: 25px;         /* rounded pill shape */
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+/* mouseover feedback: pill gets darker when you hover over it */
+.nav-link:hover {
+  background-color: #5416b3;
+}
+
+/* JS adds this class to whichever page you're currently on */
+.nav-link.active {
+  background-color: #4a1096;   /* even darker purple to show current page */
+}
+
+/* ---- Main content area ---- */
+main {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: #000000;              /* black text on white background */
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 8px;
+  color: #6a1fdb;              /* purple accent for subheadings */
+}
+
+section p {
+  margin-bottom: 10px;
+}
+
+/* ---- Table on the televisions page ---- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #000000;
+}
+
+th {
+  color: #6a1fdb;              /* purple accent for table headers */
+}
+
+/* ---- Footer ---- */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #555555;
+  font-size: 0.85rem;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 30px;
+}
