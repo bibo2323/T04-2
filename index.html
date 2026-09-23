@@ -23,20 +23,16 @@
   </header>
 
   <main>
-    <h1> 📺 Appliances quietly drain more power than most people realise.</h1>
-    <p>
-      PowerWatch tracks how everyday appliances contribute to household energy
-      use across Australia. Starting with the appliance sitting in most living
-      rooms: the television.
+      <h1>Appliance Energy Consumption</h1>
+      <div id="content"></div>
+      <!-- Give the SVG a size so shapes can be seen -->
+      <svg width="300" height="150"></svg>
+      <!-- Load D3 first, then your D3 code file -->
     </p>
 
-    <section>
-      <p></p><p><strong>2.3M</strong> Australian TVs left on standby overnight</p>
-      <p><strong>$140</strong> average yearly cost of standby power per household</p>
-      <p><strong>11%</strong> share of household bill from entertainment appliances</p>
-    </section>
+    
 
-    <a href="televisions.html">See the television breakdown</a>
+    
   </main>
 
   <footer>
@@ -44,6 +40,8 @@
     <p>Some content and code on this site was created with the assistance of GitHub Copilot and other AI.</p>
   </footer>
 
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="energy-d3.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
